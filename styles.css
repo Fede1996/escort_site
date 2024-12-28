@@ -82,8 +82,9 @@ header {
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  background: white;
+  background: black;
   border-radius: 8px;
+  border: 2px solid gold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
