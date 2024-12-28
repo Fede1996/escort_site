@@ -9,12 +9,11 @@ body {
 }
 
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
