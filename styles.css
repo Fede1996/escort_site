@@ -12,6 +12,10 @@ header {
   position: relative;
 }
 
+.section-img {
+  width:50%;
+}
+
 .navbar {
   position: sticky;
   top: 0;
