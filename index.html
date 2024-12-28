@@ -1,72 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exclusive luxury companionship services for discerning clients.">
-  <title>Exclusive Luxury Services</title>
+  <meta name="description" content="Servizi di lusso esclusivi per clienti raffinati.">
+  <title>Servizi di Lusso Esclusivi</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="#" class="logo">Exclusive Luxury</a>
+      <a href="#" class="logo">Servizi di Lusso</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-lang-key="menu-about">Chi Siamo</a></li>
+        <li><a href="#services" data-lang-key="menu-services">Servizi</a></li>
+        <li><a href="#contact" data-lang-key="menu-contact">Contatti</a></li>
+        <li>
+          <select id="language-switcher">
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+          </select>
+        </li>
       </ul>
     </nav>
     <div class="hero">
-      <h1>Experience Elegance & Refinement</h1>
-      <p>Bespoke luxury experiences tailored to meet your expectations.</p>
-      <a href="#services" class="btn">Learn More</a>
+      <div class="hero-content">
+        <h1 data-lang-key="hero-title">Benvenuti nel mondo dell'eleganza</h1>
+        <p data-lang-key="hero-text">Esperienze di lusso su misura per individui esigenti.</p>
+        <a href="#services" class="btn" data-lang-key="hero-btn">Scopri di più</a>
+      </div>
     </div>
   </header>
 
   <main>
     <section id="about" class="about">
-      <h2>About Us</h2>
-      <p>We specialize in offering exclusive luxury experiences, focusing on sophistication, discretion, and unparalleled service. Our commitment is to provide unforgettable moments that cater to refined tastes.</p>
+      <h2 data-lang-key="about-title">Chi Siamo</h2>
+      <p data-lang-key="about-text">Offriamo esperienze indimenticabili con un'enfasi su sofisticazione, discrezione e attenzione ai dettagli. I nostri servizi personalizzati sono progettati per soddisfare le vostre più alte aspettative.</p>
     </section>
 
     <section id="services" class="services">
-      <h2>Our Services</h2>
-      <div class="service-item">
-        <h3>Private Dinner Companionship</h3>
-        <p>Enhance your evening with a charming and sophisticated companion.</p>
-      </div>
-      <div class="service-item">
-        <h3>Event Accompaniment</h3>
-        <p>Professional and elegant presence for corporate and social events.</p>
-      </div>
-      <div class="service-item">
-        <h3>Travel Companionship</h3>
-        <p>Enjoy luxurious journeys with a cultivated and engaging travel partner.</p>
+      <h2 data-lang-key="services-title">I Nostri Servizi</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3 data-lang-key="service1-title">Compagnia per Cene Private</h3>
+          <p data-lang-key="service1-text">Rendi la tua serata speciale con una presenza affascinante e sofisticata.</p>
+        </div>
+        <div class="service-item">
+          <h3 data-lang-key="service2-title">Accompagnamento per Eventi</h3>
+          <p data-lang-key="service2-text">Eleganza e professionalità per incontri aziendali e sociali.</p>
+        </div>
+        <div class="service-item">
+          <h3 data-lang-key="service3-title">Compagnia per Viaggi</h3>
+          <p data-lang-key="service3-text">Rendi i tuoi viaggi memorabili con un compagno colto e coinvolgente.</p>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>For inquiries and bookings, please fill out the form below or reach out to us directly.</p>
+      <h2 data-lang-key="contact-title">Contattaci</h2>
+      <p data-lang-key="contact-text">Per domande o prenotazioni, compila il modulo sottostante o contattaci direttamente.</p>
       <form>
-        <label for="name">Your Name</label>
+        <label for="name" data-lang-key="form-name">Il tuo nome</label>
         <input type="text" id="name" name="name" required>
         
-        <label for="email">Your Email</label>
+        <label for="email" data-lang-key="form-email">La tua email</label>
         <input type="email" id="email" name="email" required>
         
-        <label for="message">Your Message</label>
+        <label for="message" data-lang-key="form-message">Il tuo messaggio</label>
         <textarea id="message" name="message" rows="4" required></textarea>
         
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn" data-lang-key="form-submit">Invia Messaggio</button>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2024 Exclusive Luxury Services. All rights reserved.</p>
-    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    <p>&copy; 2024 <span data-lang-key="footer-company">Servizi di Lusso Esclusivi</span>. <span data-lang-key="footer-rights">Tutti i diritti riservati.</span></p>
+    <a href="#" data-lang-key="footer-privacy">Privacy Policy</a> | <a href="#" data-lang-key="footer-terms">Termini di Servizio</a>
   </footer>
+
+  <script src="lang.js"></script>
 </body>
 </html>
